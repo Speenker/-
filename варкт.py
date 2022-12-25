@@ -70,11 +70,11 @@ v = velocity(0,0,m1,m1)
 h = 0
 lastM = m1
 while(268-i >= 0 and dM >= 0):
-  #print(i, ":", v, "", h/1000)
-  V.append(8*v)
+  #print(i, ":", 3.5*v, "", 0.9*h)
+  V.append(3.5*v)
   dM -= k
   v0 = velocity(v, h, m_without_fuel+dM, m_without_fuel+dM+k)
-  hm.append(h)
+  hm.append(0.9*h)
   h += (v+v0)*0.5
   v = v0
   i += 1
